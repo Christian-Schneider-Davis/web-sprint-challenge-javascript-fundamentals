@@ -26,13 +26,17 @@ myFunction();
     1. Receive a number 
     2. Use a counter to return the summation of that number. 
     
+
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(n) { 
+  var getSum = 0;
+  for (let i = 0; i < 11; i++ ){
+    getSum 
+}
 
   }
- 
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -56,10 +60,11 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(displayNames){
+   
   }
-  
+ // return 'name: + `${name}`, + scientific: `${scientific name}`';
+
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -67,8 +72,9 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(){
+    const lowerCase = zooAnimals.map(animal_name.toLowerCase());
+    return lowerCase
   }
   
   
@@ -143,16 +149,27 @@ function greeting(/*Your Code Here */){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
-}
+function CuboidMaker(getVolume){
+ constructor (attrs);
+   this.height = attrs.height;
+   this.length = attrs.length;
+   this.width = attrs.width;
+ }
+
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-
+class volume {
+  constructor(sides) {
+    this.height = sides.height;
+    this.length = sides.length;
+    this.width = sides.width;
+    return this.length * this.width * this.height;
+  }
+}
 
 
 
@@ -169,9 +186,12 @@ function CuboidMaker(/*Your Code Here */){
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
-
-
-
+class cuboid extends CuboidMaker{
+  constructor (attrs){
+  super (attrs);
+}
+}
+//const cubiod = new (4, 5, 5);
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -182,9 +202,15 @@ function CuboidMaker(/*Your Code Here */){
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo{
+ constructor(attrs){
+ this.length = attrs.length;
+ this.width = attrs.width;
+ this.height = attrs.height;
+}
+cuboidTwo (){
 
 }
-
+}
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 // console.log(cuboidTwo.volume()); // 100
@@ -196,7 +222,12 @@ class CuboidMakerTwo{
 
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
+class Cubemaker extends CuboidMakerTwo{
+  constructor(attrs){
+    super(attrs);
 
+  }
+}
 
 
 
