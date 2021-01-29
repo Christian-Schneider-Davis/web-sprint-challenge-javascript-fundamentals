@@ -131,9 +131,14 @@ function multiply(/*Your Code Here */){
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(fName,lName){
+   return ('Hello `${fname}` + `${lname}` + `, nice to meet you!`')
   }
+  function sayHey(callback){
+  const firstAndLast = 'Christian' + 'Schneider';
+  callback(firstAndLast);
+} 
+
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -194,9 +199,9 @@ class cuboid extends CuboidMaker{
   constructor (attrs){
   super (attrs);
 }
-}
-//const cubiod = new (4, 5, 5);
 
+// const cubiod = new (4, 5, 5);
+}
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
 // console.log(cuboid.volume()); // 100
