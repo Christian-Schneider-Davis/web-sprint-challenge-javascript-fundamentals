@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//nestedFunction can access the variable internal because of function scope. Function scope allows internal to be accessed by nestedFunction privately since nestedFunction was created inside myFunction.
 
 
 
