@@ -26,14 +26,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+Within JavaScript, .foreach and .map both work similarly to .length by running through each item within the array. The main differences between the two are with .foreach, what ever maipluation you want to apply to each item .foreach will do so to each individual item in the orginal array, where as with .map it will create an entirely new array with the newly updated values. 
 
 2. Explain the difference between a callback and a higher order function.
+ A callback function is a function that is passed to another function with the expectation that the other function will call it. A higher-order function is a function that uses another function as an argument and/or returns a function to its callers.
 
 3. What is closure?
+A closure is a function constructed with references to it's state which allows access to an outer function’s scope from an inner function.
 
-4. Describe the four rules of the 'this' keyword.
+4. Describe the four rules of the 'this' keyword. 
+The four principles of the 'this' keyword are Window(or Global), Implicit, New, and Explicit Binding. When 'this' keyword is used without first declaring a parent, it will apply to the Window/Global Binding. Implicit binding is whenever a function is called by a preceding dot, the object before that dot is 'this'. New binding is when a constructor function is used, 'this' will refer to the specific instance of the object that is created and returned by the constructor function. Explicit binding is whenever the .call or .apply method is used.
 
 5. Why do we need super() in an extended class?
+Super() is important to extended classes because it allows the newly created object to inherit attributes from the parent class. This will make for much cleaner code, especially when working with large data sets.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
