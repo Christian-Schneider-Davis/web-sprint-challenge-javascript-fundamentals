@@ -196,7 +196,9 @@ this.height = height;
   2 * (length * width + length * height + width * height)  */
 
 function surfaceArea (){
-
+  CuboidMaker.prototype.surfaceArea = function(){
+    return 2 * (length * width + length * height + width * height); 
+  }
 }
 
 
