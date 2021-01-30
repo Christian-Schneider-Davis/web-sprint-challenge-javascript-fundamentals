@@ -61,9 +61,15 @@ const zooAnimals = [
   */
 
   function animalNames(name,scientificName){
-  }
- 
- // return 'name: + `${name}`, + scientific: `${scientific name}`';
+    this.name = animal_name;
+    this.scientificName = scientific_name;}
+
+  //  var displayNames(){
+    //  .array.forEach(element => {
+        
+ //     });
+   // } 
+  //  return '`name: ` + ${animal_name} + `, scientific: ` + ${scientific_name}';
 
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -172,7 +178,7 @@ this.height = height;
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-  //function CuboidMaker(length, width, height){
+  function volume(){
    // this.length = length;
    // this.width = width;
     //this.height = height;
@@ -180,7 +186,7 @@ this.height = height;
     CuboidMaker.prototype.volume = function(){
     return this.length * this.width * this.height;
   }
-
+  }
 
 
 
