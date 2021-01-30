@@ -208,7 +208,7 @@ function surfaceArea (){
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
-class cuboid extends CuboidMaker{}
+// class cuboid extends CuboidMaker{}
   
 // var cubiod = new cuboid(4,5,5);
 

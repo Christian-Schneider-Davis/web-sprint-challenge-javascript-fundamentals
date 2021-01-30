@@ -26,7 +26,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-Within JavaScript, .foreach and .map both work similarly to .length by running through each item within the array. The main differences between the two are with .foreach, what ever maipluation you want to apply to each item .foreach will do so to each individual item in the orginal array, where as with .map it will create an entirely new array with the newly updated values. 
+Within JavaScript, .foreach and .map both work similarly to .length by running through each item within the array. The main differences between the two are with .foreach, what ever maipluation you want to apply .foreach will do so to each individual item in the orginal array, where as with .map it will create an entirely new array with the newly updated values. 
 
 2. Explain the difference between a callback and a higher order function.
  A callback function is a function that is passed to another function with the expectation that the other function will call it. A higher-order function is a function that uses another function as an argument and/or returns a function to its callers.
