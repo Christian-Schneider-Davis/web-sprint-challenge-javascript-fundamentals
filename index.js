@@ -60,9 +60,9 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(displayNames){
-   
+  function animalNames(name,scientificName){
   }
+ 
  // return 'name: + `${name}`, + scientific: `${scientific name}`';
 
 
@@ -73,8 +73,8 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(){
-    const lowerCase = zooAnimals.map(animal_name.toLowerCase());
-    console.log(lowerCase);
+    const lowercased = zooAnimals.map( animal_name => animal_name.toLowerCase());
+    console.log(lowercased);
   }
   
   
@@ -111,8 +111,8 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a,b,cb){
+    
   }
  
   
@@ -132,12 +132,14 @@ function multiply(/*Your Code Here */){
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
 function greeting(fName,lName){
-   return ('Hello `${fname}` + `${lname}` + `, nice to meet you!`')
-  }
+  
   function sayHey(callback){
   const firstAndLast = 'Christian' + 'Schneider';
   callback(firstAndLast);
+  return ('Hello `${fname}` + `${lname}` + `, nice to meet you!`')
+}
 } 
+
 
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
@@ -158,12 +160,11 @@ function greeting(fName,lName){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(getVolume){
- constructor (attrs);
-   this.height = attrs.height;
-   this.length = attrs.length;
-   this.width = attrs.width;
- }
+function CuboidMaker(length, width, height){
+this.length = length;
+this.width = width;
+this.height = height;
+}
 
 
 
@@ -171,14 +172,15 @@ function CuboidMaker(getVolume){
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-class volume {
-  constructor(sides) {
-    this.height = sides.height;
-    this.length = sides.length;
-    this.width = sides.width;
+  //function CuboidMaker(length, width, height){
+   // this.length = length;
+   // this.width = width;
+    //this.height = height;
+   // }
+    CuboidMaker.prototype.volume = function(){
     return this.length * this.width * this.height;
   }
-}
+
 
 
 
@@ -187,6 +189,9 @@ class volume {
   Formula for cuboid surface area of a cube: 
   2 * (length * width + length * height + width * height)  */
 
+function surfaceArea (){
+
+}
 
 
 
@@ -195,13 +200,12 @@ class volume {
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
-class cuboid extends CuboidMaker{
-  constructor (attrs){
-  super (attrs);
-}
+class cuboid extends CuboidMaker{}
+  
+// var cubiod = new cuboid(4,5,5);
 
-// const cubiod = new (4, 5, 5);
-}
+
+
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
 // console.log(cuboid.volume()); // 100
